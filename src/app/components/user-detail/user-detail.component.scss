@@ -1,0 +1,42 @@
+.info-row {
+    display: flex;
+    margin-top: 15px;
+
+    .label {
+        flex: 1;
+    }
+    .value {
+        flex: 6;
+        font-weight: 100;
+    }
+}
+.title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.user-detail-container {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.spinner-margin {
+    margin: 0 10px;
+}
+
+.spinner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error {
+    color: red;
+}

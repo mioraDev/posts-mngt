@@ -1,0 +1,53 @@
+.spinner-margin {
+    margin: 0 10px;
+  }
+
+  .spinner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  table {
+    width: 98%;
+    margin: auto;
+  }
+
+  th {
+    font-size: 18px;
+    color: #3c76d2;
+  }
+
+  .title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+// Personalized material style
+.mat-column-user, .mat-column-title {
+    width: 20%;
+}
+
+.mat-column-user.mat-cell {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.mat-cell, .mat-header-cell {
+    padding-left: 10px;
+}
+
+tr.mat-row {
+    height: 58px;
+}
+
+.error {
+    color: red;
+}

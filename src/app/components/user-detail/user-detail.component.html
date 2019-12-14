@@ -1,0 +1,63 @@
+<div class="title">
+    USER DETAIL
+</div>
+<!-- ERROR -->
+<div class="error" *ngIf="hasError">
+    An error was occurred while retrieving data
+</div>
+<!-- SPINNER -->
+<div class="spinner" *ngIf="isLoading">
+    <mat-progress-spinner class="spiner-margin" [color]="'primary'" [mode]="'indeterminate'">
+    </mat-progress-spinner>
+</div>
+<!-- USER DETAIL -->
+<div class="user-detail-container" *ngIf="!isLoading && !hasError">
+    <div class="info-row">
+        <div class="label">
+            Name:
+        </div>
+        <div class="value">
+            {{user?.name}}
+        </div>
+    </div>
+    <div class="info-row">
+        <div class="label">
+            User name:
+        </div>
+        <div class="value">
+            {{user?.username }}
+        </div>
+    </div>
+    <div class="info-row">
+        <div class="label">
+            Email:
+        </div>
+        <div class="value">
+            {{user?.email}}
+        </div>
+    </div>
+    <div class="info-row">
+        <div class="label">
+            Address:
+        </div>
+        <div class="value">
+            {{user?.address?.street}}, {{user?.address?.city}}, {{user?.address?.zipcode}}
+        </div>
+    </div>
+    <div class="info-row">
+        <div class="label">
+            Phone:
+        </div>
+        <div class="value">
+            {{user?.phone}}
+        </div>
+    </div>
+    <div class="info-row">
+        <div class="label">
+            Website:
+        </div>
+        <div class="value">
+            {{user?.website}}
+        </div>
+    </div>
+</div>
